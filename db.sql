@@ -1,0 +1,10 @@
+CREATE DATABASE chat CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+USE chat;
+
+CREATE TABLE chat (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pseudo VARCHAR(50) NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
